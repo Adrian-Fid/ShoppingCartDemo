@@ -12,6 +12,6 @@ class Cartitem < ApplicationRecord
         else
             subtotal = self.amount * price
         end
-        subtotal
+        subtotal.round(2)
     end
 end

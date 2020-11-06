@@ -19,7 +19,11 @@
         <td><%= Product.find(item.product_id).name %></td>
         <td><%= item.product_id %></td>
         <td><%= item.amount%></td>
-        <td><%= item.weight %></td>
+        <% if item.weight > 0 %>
+          <td><%= item.weight %></td>
+        <% else %>
+          <td>n/a</td>
+        <% end %>
         <td><%= item.subTotal %></td>
         <td><%= link_to '-', edit_cart_path({ product_name: Product.find(item.product_id).name, amount: -1}) %></td>
       </tr>
