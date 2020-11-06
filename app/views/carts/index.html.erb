@@ -1,0 +1,45 @@
+
+<%= form_for :cart, url: carts_path do |f| %>
+   <div class="form-group">
+    <p>
+      <%= f.label :file, "Upload Shopping List to Create a Cart" %>
+      <br>
+      <br>
+      <%= f.file_field :file, required: true %>
+      <br>
+    </p>
+   </div>
+   <%= f.submit %>
+<% end %>
+<br>
+
+
+<%= button_to 'Or Create an Empty Cart', carts_path, method: :post %>
+
+
+<br>
+
+<table>
+  <caption> <b>All Existing Carts<b> </caption>
+  <tr>
+    <th>cart id</th>
+    <th>cart name</th>
+    <th>Created</th>
+    <th>Updated</th>
+  </tr>
+ 
+  <% @carts.each do |cart| %>
+    <tr>
+      <td><%= cart.id %></td>
+      <td><%= cart.name %></td>
+      <td><%= cart.created_at %></td>
+      <td><%= cart.updated_at %></td>
+      <td><%= link_to 'Show', cart_path(cart) %></td>
+      <td><%= link_to 'Destroy', cart_path(cart), method: :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'View Products', products_path %>

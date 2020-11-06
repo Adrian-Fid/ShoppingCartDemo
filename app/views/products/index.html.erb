@@ -1,0 +1,42 @@
+<%= form_for :products, url: products_path do |f| %>
+   <div class="form-group">
+    <p>
+      <%= f.label :file, "Upload Products List" %>
+      <br>
+      <br>
+      <%= f.file_field :file, required: true %>
+    </p>
+   </div>
+   <%= f.submit%>
+<% end %>
+
+
+<table>
+  <caption> Product List </caption>
+  <tr>
+    <th>brand</th>
+    <th>Name</th>
+    <th>Category</th>
+    <th>Price</th>
+    <th>Price Condition</th>
+    <th>Promotion</th>
+    <th>Tax</th>    
+    <th colspan="7"></th>
+  </tr>
+ 
+  <% @products.each do |product| %>
+    <tr>
+      <td><%= product.brand %></td>
+      <td><%= product.name %></td>
+      <td><%= product.category %></td>
+      <td><%= product.price %></td>
+      <td><%= product.price_condition %></td>
+      <td><%= product.promo %></td>
+      <td><%= product.tax %></td>
+    </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'View/Add a Cart', carts_path %>
