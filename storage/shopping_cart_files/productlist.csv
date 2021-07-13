@@ -1,0 +1,25 @@
+brand,name,category,price,price_condition,promo,tax
+Ruby's Virtual,Hummus,Grocery,$3.50,,-$0.25,N
+,Spaghetti Squash,Produce,$2.20,/ kg,,N
+Big Smile,Toothpaste,Personal Care,$1.74,,,Y
+Student Living,Ramen Noodles,Grocery,$0.95,,,N
+,Ambrosia Apple,Produce,$4.29,/ kg,,N
+,Green Onions,Produce,$0.82,/ each,,N
+Rails Farms,Chicken Breast,Poultry,$11.49,,-$1.50,N
+,Yellow Pepper,Produce,$6.75,/ kg,,N
+,Green Pepper,Produce,$5.53,/ kg,,N
+,Button Mushroom,Produce,$1.98,/ each,,N
+,Oyster Mushroom,Produce,$3.88,/ each,,N
+Ruby's Virtual,Goat Cheese,Cheese & Dairy,$5.00,,,N
+,Italian Parsley,Produce,$1.75,/ each,,N
+,Cilantro,Produce,$1.10,/each,,N
+Ruby's Virtual,Fusilli,Grocery,$2.10,,,N
+,Pine Nuts,Bulk,$6.10,,,N
+,Basil,Produce,$0.80,/ each,,N
+,Extra Virgin Olive Oil,Grocery,$8.20,,,N
+Ruby's Virtual,Parmesean Cheese,Cheese & Dairy,$8.98,,,N
+,Orange Juice,Beverage,$3.98,,,N
+,Soy Milk,Beverage,$3.98,,,N
+Shan's Clean,Aloe Hand Soap,Personal Care,$3.49,,,Y
+Ruby's Virtual,Ice Cream Sandwich,Dessert,$6.20,,-$1.00,N
+Student Living,Pizza Rolls,Grocery,$5.50,,,N
