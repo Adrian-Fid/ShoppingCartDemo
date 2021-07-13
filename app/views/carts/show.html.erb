@@ -6,7 +6,6 @@
     <tr>
       <th>Product brand</th>
       <th>Product Name</th>
-      <th>Product Id</th>
       <th>Amount</th>
       <th>Weight</th>
       <th>subTotal</th>
@@ -17,7 +16,6 @@
       <tr>
         <td><%= Product.find(item.product_id).brand%></td>
         <td><%= Product.find(item.product_id).name %></td>
-        <td><%= item.product_id %></td>
         <td><%= item.amount%></td>
         <% if item.weight > 0 %>
           <td><%= item.weight %></td>
@@ -31,8 +29,8 @@
       <tfoot>
       <tr>
         <tr></tr>
-        <td>Total Price</td>
-        <td><%= @cart.totalPrice %></td>
+        <td> <b> Total Price <b>  </td>
+        <td> <b>  <%= @cart.totalPrice %> <b> </td>
         <br>
         <br>
       </tr>

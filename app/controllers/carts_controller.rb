@@ -16,6 +16,10 @@ class CartsController < ApplicationController
         redirect_to cart_path
     end
     def create
+        if params[:cart].nil?
+            redirect_to carts_path
+            return ShoppingCart.create(name: "new cart")
+        end
         uploaded_file = params[:cart][:file]
         header = CSV.read(uploaded_file, headers: true).headers
         new_carts = createCarts(header)

@@ -11,6 +11,7 @@ class ProductsController < ApplicationController
       row = parseRow(row)
       Product.create!(row.to_h)
     end
+    redirect_to products_path
   end
-  #redirect_to products_path
+  #redirect_to product_path
 end
