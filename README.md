@@ -1,5 +1,5 @@
 
-Shopping cart demo as part of Ruby on Rails University training program for python developers at Instacart
+Shopping cart demo as part of Ruby on Rails training program for python developers at Instacart
 
 ## Installation:
 
